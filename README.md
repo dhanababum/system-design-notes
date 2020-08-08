@@ -28,3 +28,6 @@
 * get Key
 * Exists key
 * del key
+#### Setup
+* Docker spinup
+* default port 6379
