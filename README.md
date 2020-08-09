@@ -39,7 +39,7 @@
 * Brokerless
 * You build what you need
 * Not Sure why it's called MQ
-#### Messaiging Patterns
+#### Messaging Patterns
 * Sychronous Request/Response
 * Asynchronous Request/Response
 * Publish/Subscribe
@@ -52,3 +52,11 @@
 * PULL
 * DEALER(Client)
 * ROUTER(Server)
+#### Thoughts on ZeroMQ
+* Pros
+  * Simple
+  * Great for small usecase
+  * Efficient Lightweight
+* Cons
+  * Feels over-engineered could be simpler
+  
