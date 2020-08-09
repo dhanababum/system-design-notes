@@ -31,3 +31,24 @@
 #### Setup
 * Docker spinup
 * default port 6379
+
+## ZeroMQ
+#### What is ZeroMQ?
+* Messaging Library(20 languages)
+* 5 messaging Patterns
+* Brokerless
+* You build what you need
+* Not Sure why it's called MQ
+#### Messaiging Patterns
+* Sychronous Request/Response
+* Asynchronous Request/Response
+* Publish/Subscribe
+* Push/Pull
+* Exclusive Pair
+#### Socket Types
+* REQ(Request)
+* REP(Reply)
+* PUSH
+* PULL
+* DEALER(Client)
+* ROUTER(Server)
