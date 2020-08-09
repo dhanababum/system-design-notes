@@ -59,4 +59,5 @@
   * Efficient Lightweight
 * Cons
   * Feels over-engineered could be simpler
-  
+  * You have to write your own apps
+  * Could be big task if you need Pub/Sub
