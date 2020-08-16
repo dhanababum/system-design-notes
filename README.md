@@ -1,5 +1,9 @@
 # system-design-notes
 
+## Queue vs Pub/Sub
+* Queue: Message published once, consumed once
+* Pub/Sub: Message published once, but consumed many times
+
 ## Redis
 #### Key-Value Store
 * Redis is Key-Value store NoSql database
