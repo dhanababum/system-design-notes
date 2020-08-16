@@ -65,3 +65,12 @@
   * Feels over-engineered could be simpler
   * You have to write your own apps
   * Could be big task if you need Pub/Sub
+
+## Kafka
+### Consumer Group
+* To act like Queue, put all consumers in one group
+* The partitions are alocated to the each individual consumer in same group
+* The consumer never know about partitions which are allocated to other consumer in the same group
+* To act like Pub/Sub, Put each consumer in a unique group
+* then one partition can be consumed by multiple consumers
+* we get parallel processing for free
