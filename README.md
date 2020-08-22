@@ -1,6 +1,6 @@
 # system-design-notes
 
-## OSI Model(Open System Internet Connection Model)
+## OSI Model(Open System Interconnect Model)
 * Lets say there are 5 internal IP addresses connected to Router
   * 10.0.0.1 (Router) - A
   * 10.0.0.2 (Client-Computer connected to Router by wired) - B
