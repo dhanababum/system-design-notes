@@ -8,7 +8,7 @@
   * 10.0.0.4 (Client-Computer connected to Router by wired) - F
   * 10.0.0.5 (Client-Mobile connected to Router by wifi) - D
 * Layers 
-  ** client
+  * client
   * Application Layer 7 prepares (GET / 10.0.0.3 80 --> HTTP Headers cookies, Content-Type etc)
   * Presentation Layer 6 Encrypt if necessary(HTTPS)
   * Session Layer 5 Establish Session tag (For ex: Session Id)
@@ -16,7 +16,7 @@
   * Network Layer 3 takes sigment data(Contains multiple packets) and send it to network Ex: (10.0.0.5 | packets| 10.0.0.3...etc)
   * Data Link Layer 2 takes packets into frames(small chunk of packet) and Ex: (D Mac Address|frame| C Mac Address). IP Adress can be reverse engineered and can find Mac address.
   * Layer 1 Physical Layer takes frames into bits and it doesn't know where to send it. Then it send's data to every where. Network card receives and sniff it off if frame doesn't belongs to respective machine.
-  ** server side same layers act to get data.
+  * server side same layers act to get data.
 
 ## Queue vs Pub/Sub
 * Queue: Message published once, consumed once
