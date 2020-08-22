@@ -1,5 +1,23 @@
 # system-design-notes
 
+## OSI Model(Open System Internet Connection Model)
+* Lets say there are 5 internal IP addresses connected to Router
+  * 10.0.0.1 (Router) - A
+  * 10.0.0.2 (Client-Computer connected to Router by wired) - B
+  * 10.0.0.3 (Server-Computer connected to Router by wired) - C
+  * 10.0.0.4 (Client-Computer connected to Router by wired) - F
+  * 10.0.0.5 (Client-Mobile connected to Router by wifi) - D
+* Layers 
+  ** client
+  * Application Layer 7 prepares (GET / 10.0.0.3 80 --> HTTP Headers cookies, Content-Type etc)
+  * Presentation Layer 6 Encrypt if necessary(HTTPS)
+  * Session Layer 5 Establish Session tag (For ex: Session Id)
+  * Transport Layer 4 breaks data into each sigment, And sigment may contains (123| Add ports/Seq| 80) and lot of packets
+  * Network Layer 3 takes sigment data(Contains multiple packets) and send it to network Ex: (10.0.0.5 | packets| 10.0.0.3...etc)
+  * Data Link Layer 2 takes packets into frames(small chunk of packet) and Ex: (D Mac Address|frame| C Mac Address). IP Adress can be reverse engineered and can find Mac address.
+  * Layer 1 Physical Layer takes frames into bits and it doesn't know where to send it. Then it send's data to every where. Network card receives and sniff it off if frame doesn't belongs to respective machine.
+  ** server side same layers act to get data.
+
 ## Queue vs Pub/Sub
 * Queue: Message published once, consumed once
 * Pub/Sub: Message published once, but consumed many times
