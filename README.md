@@ -23,15 +23,29 @@
 * Pros
  * Acknowledgement (Hey I sent you a message did you recieved it)
  * Guaranteed Delivery depends on the Acknowledgement(If receiver doesn't respond or not received acknowledge then try to retransmit again)
- * TCP is connection based(both destination and source should connected in the network - meaning stateful)
+ * TCP is a connection based(both destination and source should connected in the network - meaning stateful)
  * TCP has Congestion Control(To control the flow of packet transfer when the network can handle)
  * Ordered Packets(In the network packet sequence not guaranteed but TCP make sures packets are labeled and other end the packets will be consumed based on label)
+ * Security
 * Cons
  * Larger Packets(Lots of overhead)
  * More Bandwith
  * Slower than UDP
  * Stateful(When you close the connection you will loose the data)
  * Server Memory(DOS) --> That's the reason at a time tcp connections are limited to the server.
+### UDP (User Datagram Protocol)
+* Pros
+ * Smaller Packets
+ * Less bandwidth
+ * Faster than tcp
+ * stateless
+* Cons
+ * No Acknowledgment
+ * No Guaranteed Delivery
+ * Connectionless
+ * No Congestion Control
+ * No Ordered packets
+ * Security
 
 ## Queue vs Pub/Sub
 * Queue: Message published once, consumed once
