@@ -121,3 +121,6 @@
 * To act like Pub/Sub, Put each consumer in a unique group
 * then one partition can be consumed by multiple consumers
 * we get parallel processing for free
+
+## GRPC
+* GRPC works on ProtoBuffer and HTTP/2
